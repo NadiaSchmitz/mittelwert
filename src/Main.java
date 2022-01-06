@@ -11,11 +11,11 @@ public class Main {
 
 		DecimalFormat df = new DecimalFormat("###.##");
 		
-		while (i < 12) {
+		while (i < verkauf.length) {
 			
 			verkauf[i] = IOTools.readInteger("Geben Sie eine Zahl für " + (i + 1) + ". Monat ein: ");
 			summe = summe + verkauf[i];
-			mittelwert = summe / 12;
+			mittelwert = summe / verkauf.length;
 			i++;
 			
 		}
